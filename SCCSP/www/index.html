@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+  <TITLE>Sthar Citizen Centricity</TITLE>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf8">
+  <meta name=viewport content="user-scalable=no,width=device-width" />
+  <link rel=stylesheet href=css/test-protegete.min.css />
+  <link rel=stylesheet href=css/jquery.mobile.structure-1.3.2.min.css />
+  <script src=js/jquery-1.10.2.min.js></script>
+  <script src=js/jquery.mobile-1.3.2.min.js></script>
+
+</HEAD>
+<BODY>
+	
+	<div data-role=page id="inicio" data-theme="a">
+	
+		<!-- Navegacion -->
+		<div data-role=header data-position=fixed id="nav">
+			<div data-role=navbar>
+			  <ul>
+				<li><a href=#inicio class="ui-btn-active ui-state-persist">Inicio</a></li>
+				<li><a href=#somos>Somos</a></li>
+				<li><a href=#denuncia>Denuncia</a></li>
+				<li><a href=#ayuda>Ayuda</a></li>
+			  </ul>
+			</div>
+		</div>
+
+		<div data-role="content">	
+			<h2>Inicio</h2>
+			
+			<h3>Informar de forma anónima sobre un contenido ilegal o dañino</h3>
+			<p>¿Qué es una denuncia anónima?</p>
+			<p>¿Qué contenidos son ilegales o dañinos?</p>
+			
+			<h3>Solicitar ayuda ante una situación que estoy sufriendo en internet</h3>
+			<p>¿Quién me va a ayudar?</p>
+			<p>¿Ante qué situaciones puedo pedir ayuda?</p>
+			
+			<h3>Cuestionario de evaluación</h3>
+			<p>¿Quieres probar tus conocimientos sobre seguridad en internet?</p>
+		</div>
+			
+	</div>
+	
+	<!-- Somos -->
+	<div data-role=page id="somos" data-theme="a">
+
+			<!-- Navegacion -->
+		<div data-role=header data-position=fixed id="nav">
+			<div data-role=navbar>
+			  <ul>
+				<li><a href=#inicio>Inicio</a></li>
+				<li><a href=#somos class="ui-btn-active ui-state-persist">Somos</a></li>
+				<li><a href=#denuncia>Denuncia</a></li>
+				<li><a href=#ayuda>Ayuda</a></li>
+			  </ul>
+			</div>
+		</div>
+		
+		<div data-role="content">	
+
+			<H2>Somos</H2>
+			<P>
+			PROTEGETE es la Línea de Ayuda y Denuncia para menores de edad, desarrollada por el Centro de Seguridad en Internet para España coordinado en por la organización PROTEGELES, y dependiente del Safer In-ternet Programme de la Comisión Europea.
+			</P>
+			<P>
+			PROTEGETE ha sido desarrollada en colaboración con TELEFÓNICA, VODAFONE, ORANGE y YOIGO.
+			</p>
+			<p align=center>
+			<img src="img/protegeles.jpg" height="50" width="100">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/comision.png"><br>
+			<img src="img/telefonica.jpg" height="50" width="100">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/vodafone.png"><br>
+			<img src="img/orange.jpg" height="50" width="50">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/yoigo.jpg" height="50" width="150">
+			</p>
+		</div>
+	</div>
+	
+	<!-- Denuncia -->
+		
+	<div data-role=page id="denuncia" data-theme="a">
+	
+		<!-- Navegacion -->
+		<div data-role=header data-position=fixed id="nav">
+			<div data-role=navbar>
+			  <ul>
+				<li><a href=#inicio>Inicio</a></li>
+				<li><a href=#somos>Somos</a></li>
+				<li><a href=#denuncia class="ui-btn-active ui-state-persist">Denuncia</a></li>
+				<li><a href=#ayuda>Ayuda</a></li>
+			  </ul>
+			</div>
+		</div>
+		
+		<div data-role="content" data-theme="a">	
+
+			<H2>Denuncia</H2>
+			<P align="center">
+			Informa de forma anónima sobre un contenido ilegal o dañino.
+			</P>
+			 <FORM>
+				<P ALIGN=Center>
+				<B>URL:</B> http:// -------------------- <br> <INPUT type="text" name="URL"><BR>
+				</P>
+				<P ALIGN=Center>
+				<input type="button" onclick="showPopup()" value="Enviar">
+				</P>
+			 </FORM>
+			 
+			<P align="center">
+			Si quieres informar sobre un contenido p2p u otro contenido que no tenga una URL, puedes  describirlo aquí:	
+			</P>
+
+			 <FORM>
+				<P ALIGN=Center>
+				<INPUT type="textarea" name="othercontent"><BR>
+				</P>
+				<P ALIGN=Center>
+				<input type="button" onclick="showPopup()" value="Enviar">
+				</P>
+			 </FORM>
+		</div>
+
+	</div>
+	
+	<!-- Ayuda -->
+	
+	<div data-role=page id="ayuda" data-theme="a">
+	
+		<!-- Navegacion -->
+		<div data-role=header data-position=fixed id="nav">
+			<div data-role=navbar>
+			  <ul>
+				<li><a href=#inicio>Inicio</a></li>
+				<li><a href=#somos>Somos</a></li>
+				<li><a href=#denuncia>Denuncia</a></li>
+				<li><a href=#ayuda class="ui-btn-active ui-state-persist">Ayuda</a></li>
+			  </ul>
+			</div>
+		</div>
+
+		<div data-role="content">
+		
+			<H1>Ayuda</H1>
+
+			<P>
+			Para copiar una URL, pulsa sobre la barra de direcciones del navegador dos veces, y sobre el men&uacute; emergente, pulsa "Seleccionar todo" y despu&eacute;s "Copiar".
+			</P>
+			<P>
+			Para pegar una URL, pulsa sobre el campo de texto URL de nuestra aplicaci&oacute;n dos veces y selecciona "Pegar" en el men&uacute; emergente.
+			</p>
+			
+		</div>
+	</div>
+				
+</BODY>
+</HTML>
