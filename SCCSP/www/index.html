@@ -3,154 +3,240 @@
 <HEAD>
   <TITLE>Sthar Citizen Centricity</TITLE>
   <meta http-equiv="Content-Type" content="text/html; charset=utf8">
-  <meta name=viewport content="user-scalable=no,width=device-width" />
-  <link rel=stylesheet href=css/test-protegete.min.css />
-  <link rel=stylesheet href=css/jquery.mobile.structure-1.3.2.min.css />
-  <script src=js/jquery-1.10.2.min.js></script>
-  <script src=js/jquery.mobile-1.3.2.min.js></script>
+  <meta name=viewport content="user-scalable=no,width=device-width">
+  <link rel="stylesheet" href="css/SCCSP.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.3.min.css" /> 
+  <script src="js/jquery.min.js"></script> 
+  <script src="js/jquery.mobile-1.4.3.min.js"></script> 
 
 </HEAD>
 <BODY>
 	
-	<div data-role=page id="inicio" data-theme="a">
+	<!-- PORTADA -->
+	<div data-role=page id="portada" data-theme="a">
 	
-		<!-- Navegacion -->
-		<div data-role=header data-position=fixed id="nav">
-			<div data-role=navbar>
-			  <ul>
-				<li><a href=#inicio class="ui-btn-active ui-state-persist">Inicio</a></li>
-				<li><a href=#somos>Somos</a></li>
-				<li><a href=#denuncia>Denuncia</a></li>
-				<li><a href=#ayuda>Ayuda</a></li>
-			  </ul>
+		<div data-role="content">	
+			<h2 align="center">Gobierno de México</h2>
+			<div align="center">
+				<img src="img/mexico.jpg">
+				<a href=#login class="ui-shadow ui-btn ui-corner-all ui-btn-inline">Acceder</a>
 			</div>
+		</div>
+		
+	</div>
+	
+	<!-- LOGIN -->
+	<div data-role=page id="login" data-theme="a">
+	
+		<!-- Titulo -->
+		<div data-role=header data-position=fixed id="top">
+			<h1>Gobierno de México</h1>
 		</div>
 
 		<div data-role="content">	
-			<h2>Inicio</h2>
-			
-			<h3>Informar de forma anónima sobre un contenido ilegal o dañino</h3>
-			<p>¿Qué es una denuncia anónima?</p>
-			<p>¿Qué contenidos son ilegales o dañinos?</p>
-			
-			<h3>Solicitar ayuda ante una situación que estoy sufriendo en internet</h3>
-			<p>¿Quién me va a ayudar?</p>
-			<p>¿Ante qué situaciones puedo pedir ayuda?</p>
-			
-			<h3>Cuestionario de evaluación</h3>
-			<p>¿Quieres probar tus conocimientos sobre seguridad en internet?</p>
-		</div>
-			
-	</div>
-	
-	<!-- Somos -->
-	<div data-role=page id="somos" data-theme="a">
-
-			<!-- Navegacion -->
-		<div data-role=header data-position=fixed id="nav">
-			<div data-role=navbar>
-			  <ul>
-				<li><a href=#inicio>Inicio</a></li>
-				<li><a href=#somos class="ui-btn-active ui-state-persist">Somos</a></li>
-				<li><a href=#denuncia>Denuncia</a></li>
-				<li><a href=#ayuda>Ayuda</a></li>
-			  </ul>
-			</div>
+			<h3 align="center">Inicio de sesión</h3>
+			<form>
+				<div class="ui-field-contain">
+					 <label for="text-12">Nombre:</label>
+					 <input type="text" data-mini="true" name="text-12" id="text-12" value="">
+				</div>
+				<div class="ui-field-contain">
+					 <label for="text-13">Contraseña:</label>
+					 <input type="text" data-mini="true" name="text-13" id="text-13" value="">
+				</div>
+				<div align="center">
+					<a href=#menu class="ui-shadow ui-btn ui-corner-all ui-btn-inline">Aceptar</a>
+					<a href=#menu class="ui-shadow ui-btn ui-corner-all ui-btn-inline">Cancelar</a>
+				</div>
+			</form>
 		</div>
 		
+	</div>
+	
+	<!-- MENU -->
+	<div data-role=page id="menu" data-theme="a">
+	
+		<!-- Titulo -->
+		<div data-role=header data-position=fixed id="top">
+			<h1>Gobierno de México</h1>
+		</div>
+
 		<div data-role="content">	
-
-			<H2>Somos</H2>
-			<P>
-			PROTEGETE es la Línea de Ayuda y Denuncia para menores de edad, desarrollada por el Centro de Seguridad en Internet para España coordinado en por la organización PROTEGELES, y dependiente del Safer In-ternet Programme de la Comisión Europea.
-			</P>
-			<P>
-			PROTEGETE ha sido desarrollada en colaboración con TELEFÓNICA, VODAFONE, ORANGE y YOIGO.
-			</p>
-			<p align=center>
-			<img src="img/protegeles.jpg" height="50" width="100">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/comision.png"><br>
-			<img src="img/telefonica.jpg" height="50" width="100">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/vodafone.png"><br>
-			<img src="img/orange.jpg" height="50" width="50">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/yoigo.jpg" height="50" width="150">
-			</p>
-		</div>
-	</div>
-	
-	<!-- Denuncia -->
-		
-	<div data-role=page id="denuncia" data-theme="a">
-	
-		<!-- Navegacion -->
-		<div data-role=header data-position=fixed id="nav">
-			<div data-role=navbar>
-			  <ul>
-				<li><a href=#inicio>Inicio</a></li>
-				<li><a href=#somos>Somos</a></li>
-				<li><a href=#denuncia class="ui-btn-active ui-state-persist">Denuncia</a></li>
-				<li><a href=#ayuda>Ayuda</a></li>
-			  </ul>
-			</div>
+			<ul data-role="listview">
+			  <li><a href=#personal>Datos personales</a></li>
+			  <li><a href=#nutricion>Nutrición</a></li>
+			  <li><a href=#salud>Salud</a></li>
+			  <li><a href=#educacion>Educación</a></li>
+			  <li><a href=#encuesta>Encuesta</a></li>
+			  <li><a href=#alertas>Alertas</a></li>
+			</ul>
 		</div>
 		
-		<div data-role="content" data-theme="a">	
-
-			<H2>Denuncia</H2>
-			<P align="center">
-			Informa de forma anónima sobre un contenido ilegal o dañino.
-			</P>
-			 <FORM>
-				<P ALIGN=Center>
-				<B>URL:</B> http:// -------------------- <br> <INPUT type="text" name="URL"><BR>
-				</P>
-				<P ALIGN=Center>
-				<input type="button" onclick="showPopup()" value="Enviar">
-				</P>
-			 </FORM>
-			 
-			<P align="center">
-			Si quieres informar sobre un contenido p2p u otro contenido que no tenga una URL, puedes  describirlo aquí:	
-			</P>
-
-			 <FORM>
-				<P ALIGN=Center>
-				<INPUT type="textarea" name="othercontent"><BR>
-				</P>
-				<P ALIGN=Center>
-				<input type="button" onclick="showPopup()" value="Enviar">
-				</P>
-			 </FORM>
-		</div>
-
 	</div>
 	
-	<!-- Ayuda -->
+	<!-- PERSONAL -->
+	<div data-role=page id="personal" data-theme="a">
 	
-	<div data-role=page id="ayuda" data-theme="a">
-	
-		<!-- Navegacion -->
-		<div data-role=header data-position=fixed id="nav">
-			<div data-role=navbar>
-			  <ul>
-				<li><a href=#inicio>Inicio</a></li>
-				<li><a href=#somos>Somos</a></li>
-				<li><a href=#denuncia>Denuncia</a></li>
-				<li><a href=#ayuda class="ui-btn-active ui-state-persist">Ayuda</a></li>
-			  </ul>
-			</div>
+		<!-- Titulo -->
+		<div data-role=header data-position=fixed id="top">
+			<h1>Gobierno de México</h1>
 		</div>
-
 		<div data-role="content">
-		
-			<H1>Ayuda</H1>
+			<h4 class="ui-bar ui-bar-a ui-corner-all">Datos personales</h4>
+			  <div class="ui-body ui-body-a ui-corner-all">
+				<div class="ui-grid-a">
+					<div class="ui-block-a"><b>Nombre:</b></div>
+					<div class="ui-block-b">Rosa María</div>
+					<div class="ui-block-a"><b>Apellidos:</b></div>
+					<div class="ui-block-b">García</div>
+					<div class="ui-block-a"><b>Estado civil:</b></div>
+					<div class="ui-block-b">Casado/a</div>
+					<div class="ui-block-a"><b>Número de hijos:</b></div>
+					<div class="ui-block-b">3</div>
+					<div class="ui-block-a"><b>Dirección:</b></div>
+					<div class="ui-block-b">Barrio la Colmena, San Simón Zahuatlán 69265, Oaxaca</div>
+					<div class="ui-block-a"><b>Teléfono móvil:</b></div>
+					<div class="ui-block-b">5518158278</div>
+				</div>
+			  </div>
 
-			<P>
-			Para copiar una URL, pulsa sobre la barra de direcciones del navegador dos veces, y sobre el men&uacute; emergente, pulsa "Seleccionar todo" y despu&eacute;s "Copiar".
-			</P>
-			<P>
-			Para pegar una URL, pulsa sobre el campo de texto URL de nuestra aplicaci&oacute;n dos veces y selecciona "Pegar" en el men&uacute; emergente.
-			</p>
-			
+			<div align="center">
+				<a href=#menu class="ui-shadow ui-btn ui-corner-all ui-btn-inline">Modificar</a>
+				<a href=#menu class="ui-shadow ui-btn ui-corner-all ui-btn-inline">Volver</a>
+			</div>
 		</div>
+		
 	</div>
-				
+
+	<!-- NUTRICION -->
+	<div data-role=page id="nutricion" data-theme="a">
+	
+		<!-- Titulo -->
+		<div data-role=header data-position=fixed id="top">
+			<h1>Gobierno de México</h1>
+		</div>
+		<div data-role="content">
+			<h4 class="ui-bar ui-bar-a ui-corner-all">Nutrición</h4>
+				<div class="ui-body ui-body-a ui-corner-all">
+					<h4>Campaña anemia</h4>
+					<p>Introduce cereales, vegetales de hoja verde y huevos en tus comidas diarias.</p>
+					<fieldset data-role="controlgroup">
+						<legend>¿He comido vegetales de hoja verde más de 4 veces esta semana?</legend>
+						<input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked">
+						<label for="radio-choice-1">Sí</label>
+						<input type="radio" name="radio-choice-2" id="radio-choice-2" value="choice-2">
+						<label for="radio-choice-2">No</label>
+					</fieldset>
+				</div>
+			<div align="center">
+				<a href=#menu class="ui-shadow ui-btn ui-corner-all ui-btn-inline">Volver</a>
+			</div>
+		</div>
+		
+	</div>
+
+	<!-- SALUD -->
+	<div data-role=page id="salud" data-theme="a">
+	
+		<!-- Titulo -->
+		<div data-role=header data-position=fixed id="top">
+			<h1>Gobierno de México</h1>
+		</div>
+		<div data-role="content">
+			<h4 class="ui-bar ui-bar-a ui-corner-all">Salud</h4>
+				<div class="ui-body ui-body-a ui-corner-all">
+					<h4>Campaña de vacunación del sarampión</h4>
+					<fieldset data-role="controlgroup">
+						<legend>Su familia tiene derecho a recibir la vacuna contra el sarampión, ¿la han recibido?</legend>
+						<input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked">
+						<label for="radio-choice-1">Sí</label>
+						<input type="radio" name="radio-choice-2" id="radio-choice-2" value="choice-2">
+						<label for="radio-choice-2">No</label>
+					</fieldset>
+				</div>
+			<div align="center">
+				<a href=#menu class="ui-shadow ui-btn ui-corner-all ui-btn-inline">Volver</a>
+			</div>
+		</div>
+		
+	</div>			
+
+	<!-- EDUCACIÓN -->
+	<div data-role=page id="educacion" data-theme="a">
+	
+		<!-- Titulo -->
+		<div data-role=header data-position=fixed id="top">
+			<h1>Gobierno de México</h1>
+		</div>
+		<div data-role="content">
+			<h4 class="ui-bar ui-bar-a ui-corner-all">Educación</h4>
+				<div class="ui-body ui-body-a ui-corner-all">
+					<h4>Desayuno escolar</h4>
+					<fieldset data-role="controlgroup">
+						<legend>Sus hijos tiene el derecho de recibir el desayuno escolar, ¿lo reciben todos los días?</legend>
+						<input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked">
+						<label for="radio-choice-1">Sí</label>
+						<input type="radio" name="radio-choice-2" id="radio-choice-2" value="choice-2">
+						<label for="radio-choice-2">No</label>
+					</fieldset>
+				</div>
+			<div align="center">
+				<a href=#menu class="ui-shadow ui-btn ui-corner-all ui-btn-inline">Volver</a>
+			</div>
+		</div>
+		
+	</div>
+	
+	<!-- ENCUESTA -->
+	<div data-role=page id="encuesta" data-theme="a">
+	
+		<!-- Titulo -->
+		<div data-role=header data-position=fixed id="top">
+			<h1>Gobierno de México</h1>
+		</div>
+		<div data-role="content">
+			<h4 class="ui-bar ui-bar-a ui-corner-all">Encuesta ciudadana</h4>
+				<div class="ui-body ui-body-a ui-corner-all">
+					<h4>Encuesta</h4>
+					<fieldset data-role="controlgroup">
+						<legend>¿Que campaña recuerda más?</legend>
+						<input type="radio" name="radio-choice-5" id="radio-choice-5" value="choice-5" checked="checked">
+						<label for="radio-choice-5">Jefas de Familia</label>
+						<input type="radio" name="radio-choice-6" id="radio-choice-6" value="choice-6">
+						<label for="radio-choice-6">Si consumes, te consumes</label>
+						<input type="radio" name="radio-choice-3" id="radio-choice-3" value="choice-3">
+						<label for="radio-choice-3">Adultos Mayores</label>
+						<input type="radio" name="radio-choice-4" id="radio-choice-4" value="choice-4">
+						<label for="radio-choice-4">El machismo es violencia</label>
+					</fieldset>
+				</div>
+			<div align="center">
+				<a href=#menu class="ui-shadow ui-btn ui-corner-all ui-btn-inline">Volver</a>
+			</div>
+		</div>
+		
+	</div>	
+	
+	<!-- ALERTAS -->
+	<div data-role=page id="alertas" data-theme="a">
+	
+		<!-- Titulo -->
+		<div data-role=header data-position=fixed id="top">
+			<h1>Gobierno de México</h1>
+		</div>
+		<div data-role="content">
+			<h4 class="ui-bar ui-bar-a ui-corner-all"><img src="css/images/icons-png/alert-white.png"> Alertas</h4>
+				<div class="ui-body ui-body-a ui-corner-all">
+					<h4>Alertas activas</h4>
+					<p>Se esperan fuertes lluvias a lo largo de los próximos días, riesgo de derrumbes en Santa María Tlahuiltoltepec.</p>
+				</div>
+			<div align="center">
+				<a href=#menu class="ui-shadow ui-btn ui-corner-all ui-btn-inline">Volver</a>
+			</div>
+		</div>
+		
+	</div>	
+	
 </BODY>
 </HTML>
